@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <title>HTML Academy: Глейси</title>
 </head>
 
 <body>
@@ -28,15 +29,21 @@
         </li>
       </ul>
     </nav>
+    <div class="search-wrapper">
+      <a class="search-link" href="#">Поиск</a>
+      <form action="https://echo.htmlacademy.ru" method="POST">
+        <p>
+          <label>
+            Поиск
+            <input type="text" name="search" placeholder=" Крем-брюле">
+          </label>
+        </p>
+        <button class="visually-hidden" type="submit">Поиск</button>
+      </form>
+    </div> <!-- search-wrapper-->
 
-    <div> <a href="#">Поиск</a>
-      <p>
-        <label>
-          Поиск
-          <input type="text" name="search" placeholder=" Крем-брюле">
-        </label>
-      </p>
-      <a href="#">Вход</a>
+    <div class="login-wrapper">
+      <a class=" login-link" href="#">Вход</a>
       <form action="https://echo.htmlacademy.ru" method="POST">
         <p>
           <label for="login-login"> Логин </label>
@@ -52,7 +59,17 @@
           <a href="#">Новая регистрация</a>
         </p>
       </form>
-      <a href="#"> Пусто</a>
+    </div>
+    <!--login-wrapper-->
+
+    <div class="shopbasket">
+      <p>
+        <a href="#"> Пусто</a>
+      </p>
+    </div>
+    <!--shopping-basket-->
+
+    <div>
       <p> с 10 до 20, ежедневно <br>
         <a href="tel:+7812452525">8 812 450-25-25</a>
       </p>
@@ -60,21 +77,43 @@
   </header>
 
   <main>
-    <h1>Крем-брюле и пломбир с малиновым демом </h1>
+    <h1>Магазин мороженого </h1>
 
     <div class="slider">
       <div class="slider-control">
-        <button type="button" class="control"></button>
-        <button type="button" class="control"></button>
-        <button type="button" class="control"></button>
+        <button type="button" class="control">Первый слайд</button>
+        <button type="button" class="control">Второй слайд</button>
+        <button type="button" class="control">Третий слайд</button>
       </div>
-      <div class="slider-one"></div>
-      <div class="slider-two"></div>
-      <div class="slider-three"></div>
-    </div>
+      <div class="slider-one">
+        <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="slider-two">
+        <h2>Шоколадный пломбир и лимонный сорбет</h2>
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+      <div class="slider-three">
+        <h2>Пломбир с помадкой и клубничный щербет</h2>
+        <ul>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+        </ul>
+      </div>
+    </div> <!-- slider-->
 
-
-    <a href="#"> Давай оба!</a>
+    <p>
+      <a href="#"> Давай оба!</a>
+    </p>
     <section>
       <h2>Специальные предложения </h2>
       <div>
