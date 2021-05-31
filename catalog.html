@@ -76,8 +76,8 @@
         </div>
         <ul>
             <li><a href="index.html">Главная</a></li>
-            <li><a>Каталог</a></li>
-            <li><a href="#">Сливочное</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+            <li><a>Сливочное</a></li>
         </ul>
     </header>
 
@@ -100,137 +100,140 @@
                 </fieldset>
                 <fieldset>
                     <legend>Жирность: </legend>
-                    <label>0%
-                        <input type="radio" name="Жирность" value="0%">
-                    </label>
-                    <label> до 10%
-                        <input type="radio" name="Жирность" value="до 10%" checked>
-                    </label>
-                    <label>до 30%
-                        <input type="radio" name="Жирность" value="до 30%">
-                    </label>
-                    <label>выше 30%
-                        <input type="radio" name="Жирность" value="выше 30%">
-                    </label>
+                    <label for="fat-content-zero">0%</label>
+                    <input id="fat-content-zero" type="radio" name="Жирность" value="0%">
+                    <label for="fat-content-ten"> до 10%</label>
+                    <input id="fat-content-ten" type="radio" name="Жирность" value="до 10%" checked>
+                    <label for="fat-content-thirty">до 30%</label>
+                    <input id="fat-content-thirty" type="radio" name="Жирность" value="до 30%">
+                    <label for="fat-content-more-thirty">выше 30%</label>
+                    <input id="fat-content-more-thirty" type="radio" name="Жирность" value="выше 30%">
                 </fieldset>
                 <fieldset>
                     <legend>Наполнители:</legend>
-                    <label> шоколадные
-                        <input type="checkbox" name="chocolate" value="шоколадные" checked>
-                    </label>
-                    <label> сахарные присыпки
-                        <input type="checkbox" name="powdered sugar" value="сахарные присыпки" checked>
-                    </label>
-                    <label> фрукты
-                        <input type="checkbox" name="fruits" value="фрукты">
-                    </label>
-                    <label> сиропы
-                        <input type="checkbox" name="syrop" value="сиропы">
-                    </label>
-                    <label> джемы
-                        <input type="checkbox" name="jam" value="джемы">
-                    </label>
-                    </fieldsest>
-                    <button type="submit">Применить</button>
+                    <label for="chocolate"> шоколадные</label>
+                    <input id="chocolate" type="checkbox" name="chocolate" value="шоколадные" checked>
+                    <label for="powdered sugar"> сахарные присыпки</label>
+                    <input id="powdered sugar" type="checkbox" name="powdered sugar" value="сахарные присыпки" checked>
+                    <label for="fruits"> фрукты</label>
+                    <input id="fruits" type="checkbox" name="fruits" value="фрукты">
+                    <label for="syrop"> сиропы</label>
+                    <input id="syrop" type="checkbox" name="syrop" value="сиропы">
+                    <label for="jam"> джемы</label>
+                    <input id="jam" type="checkbox" name="jam" value="джемы">
+                </fieldset>
+                <button type="submit">Применить</button>
             </form>
         </section>
         <section>
             <h2>Список товара</h2>
             <ul>
-                <li><a href="#">
+                <li>
+                    <a href="#">
                         <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>310 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочно-кофейное с кусочками шоколада</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>380 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>355 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочное крем-брюле с карамельной подливкой </h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>415 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочное с брусничным джемом</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>325 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочно-черничное с цельными ягодами черники</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>410 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочно-лимонное с карамельной присыпкой</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>315 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочное с шоколадной стружкой</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>320 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочно-ванильное с кусочками шоколада</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>440 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочноe с ментоловым сиропом</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>435 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочное с кусочками черного шоколада</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>355 ₽/кг</p>
                 </li>
-                <li><a href="">
+                <li>
+                    <a href="#">
                         <h3>Сливочное с мятным сиропом</h3>
-                        <p>
-                            <img src="#">
-                        </p>
                     </a>
+                    <p>
+                        <img src="#">
+                    </p>
                     <p>420 ₽/кг</p>
                 </li>
             </ul>
