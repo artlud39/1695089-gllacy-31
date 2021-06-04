@@ -1,0 +1,214 @@
+:root {
+    --basic-green: #849D8F;
+    --basic-orange: linear-gradient(to bottom, #F26843 0%, #E74A35 100%);
+    --basic-white: #fff;
+    --basic-black: #323232;
+    --basic-grey: #5A5A5A;
+    --basic-neutral: #999;
+    --basic-link: rgba(255, 255, 255, .2);
+    --basic-article-link: #353535;
+}
+.page-body { 
+    min-width: 960px;
+    font-family: 'Roboto', 'Arial', sans-serif;
+    background-color: var(--basic-green);
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+    color: var(--basic-white);
+    background-image: url("images/background/slider-one.png");
+    background-position: top center;
+    background-repeat: no-repeat;  
+}
+
+.container {
+    width: 1146px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.button {
+    background-image: var(--basic-orange);
+    color: var(--basic-white);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+    border-radius: 70px;
+}
+/* -------main-navigation------*/
+
+
+.main-navigation {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 18px;
+    color: var(--basic-white);
+}
+.site-navigation {
+    list-style: none;
+}
+
+
+.site-navigation a {
+    color: var(--basic-white);
+    text-decoration: none;
+    
+}
+
+/*---------user-navigation--------*/
+
+
+.user-navigation a {
+    color: var(--basic-white);
+    text-decoration: none;
+}
+
+.time-work p {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+}
+.number-link {
+    font-size: 22px;
+    line-height: 18px;
+    font-weight: bold;
+
+}
+
+/*----------special-offer-wrapper-
+--------------------------------*/
+
+.special-offer {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 22px;
+}
+.special-offer h3 {
+    font-size: 35px;
+    line-height: 41px;
+}
+.special-offer-rasberries {
+    background-image: url(images/background/backgroud-raspberry.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+.special-offer-chocolate {
+    background-image: url(images/background/backgroud-chocolate.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+}
+
+/*----------------big-seller------------
+-------------------------------------*/
+
+
+.big-seller-item {
+    list-style: none;
+}
+.big-seller-link {
+    border-bottom: 1px solid var(--basic-link);
+
+}
+.big-seller-item a {
+    color: var(--basic-white);
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration: none;
+
+}
+
+.price {
+    font-size: 45px;
+    line-height: 45px;
+}
+
+
+/*--------------features-----------------
+----------------------------------------*/
+
+.features {
+    background-image: url(images/background/background-wafer.png);
+    color: var(--basic-black);
+}
+.features h3 {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+}
+
+.features-list {
+    list-style: none;
+    font-weight: 400;
+}
+
+/*------------article*------------------
+---------------------------------------*/
+
+
+.article {
+    background-color: var(--basic-white);
+    background-image: url(images/background/background-strawberry.jpg);
+    background-position: top left;
+    background-repeat: no-repeat;
+
+}
+
+
+.article-link a {
+    text-decoration: none;
+    border-bottom: 1px solid var(--basic-article-link);
+    color: var(--basic-black);
+    font-weight: bold;
+    line-height: 30px;
+    font-size: 24px;
+}
+
+
+/*-------------------subscribe------------
+----------------------------------------*/
+
+.subscribe {
+    background-image: url(images/background/background-subscribe.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    color: var(--basic-grey);
+}
+
+/*-----------------modal-------------------------
+-----------------------------------------------*/
+
+.modal {
+
+}
+
+/*----------------footer----------
+---------------------------------*/
+
+.footer {
+    color: var(--basic-white);
+}
+
+.footer ul {
+    list-style: none;
+}
+
+
+.social-list a,
+.footer-info-list a,
+.copyright-link a {
+    text-decoration: none;
+    color: var(--basic-white);
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid var(--basic-link);
+}
+
+
+.footer-copyright {
+    font-size: 12px;
+    line-height: 18px;
+}
