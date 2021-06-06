@@ -7,6 +7,14 @@
     --basic-neutral: #999;
     --basic-link: rgba(255, 255, 255, .2);
     --basic-article-link: #353535;
+    --basic-nav-hover-link: #FBDED7;
+    --basic-nav-active-link: #F6B5A5;
+    --basic-main-nav-hover: #EDEDED;
+    --basic-main-nav-active: #D07058;
+    --basic-shadow: #696969;
+    --basic-link-hover: #FFBC9E;
+    --basic-button-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+    --basic-shadow-active: #942718;
 }
 .page-body { 
     min-width: 960px;
@@ -18,7 +26,7 @@
     line-height: 22px;
     font-weight: 500;
     color: var(--basic-white);
-    background-image: url("images/background/slider-one.png");
+    background-image: url("../images/background/slider-one.png");
     background-position: top center;
     background-repeat: no-repeat;  
 }
@@ -38,6 +46,14 @@
     font-weight: bold;
     border-radius: 70px;
 }
+.button:hover,
+.button:focus {
+    box-shadow: 0px 2px 2px var(--basic-shadow) ;
+    background-image: var(--basic-button-hover);
+}
+.button:active {
+    box-shadow: 0px 2px 2px var(--basic-shadow-active);
+}
 /* -------main-navigation------*/
 
 
@@ -56,6 +72,26 @@
     color: var(--basic-white);
     text-decoration: none;
     
+}
+.site-navigation-link:hover,
+.site-navigation-link:focus {
+    background-color: var(--basic-main-nav-hover);
+    color: var(--basic-black); 
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid var(--basic-main-nav-hover);
+    border-radius: 20px;
+    padding: 2px;
+}
+.site-navigation-link:active {
+ box-shadow: 0px 2px 1px var(--basic-shadow);
+}
+.site-navigation-inner a:hover,
+.site-navigation-inner a:focus {
+    background-color: var(--basic-nav-hover-link);
+}
+.site-navigation-inner a:active {
+    background-color: var(--basic-nav-active-link);
 }
 
 /*---------user-navigation--------*/
@@ -91,12 +127,12 @@
     line-height: 41px;
 }
 .special-offer-rasberries {
-    background-image: url(images/background/backgroud-raspberry.png);
+    background-image: url(../images/background/backgroud-raspberry.png);
     background-position: top left;
     background-repeat: no-repeat;
 }
 .special-offer-chocolate {
-    background-image: url(images/background/backgroud-chocolate.png);
+    background-image: url(../images/background/backgroud-chocolate.png);
     background-position: top left;
     background-repeat: no-repeat;
 }
@@ -117,7 +153,16 @@
     font-size: 16px;
     line-height: 22px;
     text-decoration: none;
-
+}
+.big-seller-item a:hover,
+.big-seller-item a:focus,
+.big-seller-item a:active {
+    color: var(--basic-link-hover);
+}
+.big-seller-link:hover,
+.big-seller-link:focus,
+.big-seller-link:active {
+    border-color: var(--basic-link-hover);
 }
 
 .price {
@@ -130,7 +175,7 @@
 ----------------------------------------*/
 
 .features {
-    background-image: url(images/background/background-wafer.png);
+    background-image: url(../images/background/background-wafer.png);
     color: var(--basic-black);
 }
 .features h3 {
@@ -150,8 +195,8 @@
 
 .article {
     background-color: var(--basic-white);
-    background-image: url(images/background/background-strawberry.jpg);
-    background-position: top left;
+   background-image: url(../images/background/background-strawberry.jpg);
+    background-position: center;
     background-repeat: no-repeat;
 
 }
@@ -171,7 +216,7 @@
 ----------------------------------------*/
 
 .subscribe {
-    background-image: url(images/background/background-subscribe.png);
+    background-image: url(../images/background/background-subscribe.png);
     background-position: top left;
     background-repeat: no-repeat;
     color: var(--basic-grey);
@@ -207,6 +252,24 @@
     border-bottom: 1px solid var(--basic-link);
 }
 
+ .social-list a:hover,
+ .social-list a:focus,
+ .social-list a:active  {
+    color: var(--basic-link-hover);
+    border-color: var(--basic-link-hover);
+ }
+ .footer-info-list a:hover,
+ .footer-info-list a:focus,
+ .footer-info-list a:active {
+    color: var(--basic-link-hover);
+    border-color: var(--basic-link-hover);
+ }
+ .copyright-link a:hover,
+ .copyright-link a:focus,
+ .copyright-link a:active {
+    color: var(--basic-link-hover);
+    border-color: var(--basic-link-hover);
+ }
 
 .footer-copyright {
     font-size: 12px;
