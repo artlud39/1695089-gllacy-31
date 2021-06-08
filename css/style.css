@@ -63,15 +63,16 @@
     line-height: 18px;
     color: var(--basic-white);
 }
-.site-navigation {
+.site-navigation,
+.breadcrumbs  {
     list-style: none;
 }
-
-
+.site-navigation-link {
+    border-bottom: 1px solid var(--basic-link);
+}
 .site-navigation a {
     color: var(--basic-white);
-    text-decoration: none;
-    
+    text-decoration: none; 
 }
 .site-navigation-link:hover,
 .site-navigation-link:focus {
@@ -93,6 +94,26 @@
 .site-navigation-inner a:active {
     background-color: var(--basic-nav-active-link);
 }
+
+
+/*------------------------------------
+---------------breadcrumbs------------*/
+
+.breadcrumbs a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+    text-decoration: none;
+    color: var(--basic-white);
+    border-bottom: 1px solid var(--basic-link);
+}
+.breadcrumbs a:hover,
+.breadcrumbs a:focus,
+.breadcrumbs a:active {
+    color: var(--basic-link-hover);
+}
+
+
 
 /*---------user-navigation--------*/
 
@@ -137,39 +158,41 @@
     background-repeat: no-repeat;
 }
 
-/*----------------big-seller------------
+
+/*----------------seller------------
 -------------------------------------*/
 
 
-.big-seller-item {
+.seller-list {
     list-style: none;
 }
-.big-seller-link {
+.seller-link {
     border-bottom: 1px solid var(--basic-link);
 
 }
-.big-seller-item a {
+.seller-item a {
     color: var(--basic-white);
     font-size: 16px;
     line-height: 22px;
     text-decoration: none;
 }
-.big-seller-item a:hover,
-.big-seller-item a:focus,
-.big-seller-item a:active {
+.seller-item a:hover,
+.seller-item a:focus,
+.seller-item a:active {
     color: var(--basic-link-hover);
+    
 }
-.big-seller-link:hover,
-.big-seller-link:focus,
-.big-seller-link:active {
+.seller-link:hover,
+.seller-link:focus,
+.seller-link:active {
     border-color: var(--basic-link-hover);
 }
+
 
 .price {
     font-size: 45px;
     line-height: 45px;
 }
-
 
 /*--------------features-----------------
 ----------------------------------------*/
@@ -229,6 +252,7 @@
 
 }
 
+
 /*----------------footer----------
 ---------------------------------*/
 
@@ -274,4 +298,63 @@
 .footer-copyright {
     font-size: 12px;
     line-height: 18px;
+}
+
+
+
+
+/* -------------------------------------
+-------------page-catalog---------------*/
+.inner-page {
+    background-image: none;
+}
+.page-title {
+    font-size: 35px;
+    line-height: 41px;
+    font-weight: bold;
+}
+
+.filters legend {
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: 500;
+}
+.filters label {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+
+/*---------------------------------------
+-----------------pagination-list-------------*/
+
+.pagination-list {
+    list-style-type: none;
+}
+
+.pagination-item a {
+    text-decoration: none;
+    color: var(--basic-white);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 500;
+}
+.pagination-item a:hover,
+.pagination-item a:focus,
+.pagination-item a:active {
+    color: var(--basic-link-hover);
+}
+
+.pagination-item-stop a,
+.pagination-item-stop a:hover,
+.pagination-item-stop a:focus,
+.pagination-item-stop a:active {
+    color: var(--basic-link);
+}
+.pagination-item-current a,
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
 }
