@@ -16,16 +16,16 @@
         <div class="container">
             <nav class="main-navigation">
                 <a class="main-header-logo"><img src="images/logo.svg" width="154" height="64" alt="CllacyShop"></a>
-                <ul class="site-navigation">
+                <ul class="site-navigation site-navigation-wrapper">
                     <li>
-                        <a class="site-navigation-link" href="#"> Каталог</a>
-                        <ul class="site-navigation site-navigation-inner">
-                            <li><a href="#">Новинки</a></li>
-                            <li><a href="#">Сливочное</a></li>
-                            <li><a href="#">Щербеты</a></li>
-                            <li><a href="#">Фруктовый лед</a></li>
-                            <li><a href="#">Мелорин</a></li>
-                        </ul>
+                        <a class="site-navigation-link" href="catalog.html"> Каталог</a>
+                        <!--<ul class="site-navigation site-navigation-inner">
+                  <li><a href="#">Новинки</a></li>
+                  <li><a href="#">Сливочное</a></li>
+                  <li><a href="#">Щербеты</a></li>
+                  <li><a href="#">Фруктовый лед</a></li>
+                  <li><a href="#">Мелорин</a></li>
+                </ul>-->
                     </li>
                     <li>
                         <a class="site-navigation-link" href="blank.html">Доставка и оплата</a>
@@ -34,48 +34,57 @@
                         <a class="site-navigation-link" href="blank.html">О компании</a>
                     </li>
                 </ul>
-            </nav>
 
-            <div class="user-navigation">
-                <div class="search-wrapper">
-                    <a class="search-link" href="#">Поиск</a>
-                    <form action="https://echo.htmlacademy.ru" method="POST">
-                        <p>
-                            <label>
-                                Поиск
-                                <input type="text" name="search" placeholder=" Крем-брюле">
-                            </label>
-                        </p>
-                        <button class="visually-hidden" type="submit">Поиск</button>
-                    </form>
-                </div> <!-- search-wrapper-->
 
-                <div class="login-wrapper">
-                    <a class=" login-link user-text" href="#">Вход</a>
-                    <form action="https://echo.htmlacademy.ru" method="POST">
-                        <p>
-                            <label for="login-login"> Логин </label>
-                            <input type="email" name="email" id="login-login" placeholder="email@example.com">
-                        </p>
-                        <p>
-                            <label for="login-password "> Пароль </label>
-                            <input type="password" name="password" id="login-password" placeholder="******">
-                        </p>
-                        <button type="submit">Войти</button>
-                        <p>
-                            <a href="#">Забыли пароль?</a>
-                            <a href="#">Новая регистрация</a>
-                        </p>
-                    </form>
-                </div>
-                <!--login-wrapper-->
-
-                <div class="basket">
+                <div class="user-navigation">
+                    <div class="user-navigation-wrapper">
+                        <div class="search-wrapper">
+                            <a class="search-link" href="#">Поиск</a>
+                            <!--<form action="https://echo.htmlacademy.ru" method="POST">
                     <p>
-                        <a href="#"> 2 товара</a>
+                      <label>
+                        Поиск
+                        <input type="text" name="search" placeholder=" Крем-брюле">
+                      </label>
                     </p>
+                    <button class="visually-hidden" type="submit">Поиск</button>
+                  </form> -->
+                        </div> <!-- search-wrapper-->
+
+                        <div class="login-wrapper">
+                            <a class=" login-link user-text" href="#">Вход</a>
+                            <!--<form action="https://echo.htmlacademy.ru" method="POST">
+                    <p>
+                      <label for="login-login"> Логин </label>
+                      <input type="email" name="email" id="login-login" placeholder="email@example.com">
+                    </p>
+                    <p>
+                      <label for="login-password "> Пароль </label>
+                      <input type="password" name="password" id="login-password" placeholder="******">
+                    </p>
+                    <button type="submit">Войти</button>
+                    <p>
+                      <a href="#">Забыли пароль?</a>
+                      <a href="#">Новая регистрация</a>
+                    </p>
+                  </form> -->
+                        </div>
+                        <!--login-wrapper-->
+
+                        <div class="basket">
+                            <p>
+                                <a href="#"> Пусто</a>
+                            </p>
+                        </div>
+                        <!--basket-->
+                    </div>
                 </div>
-                <!--basket-->
+
+                <ul class="breadcrumbs">
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="catalog.html">Каталог</a></li>
+                    <li><a>Сливочное</a></li>
+                </ul>
 
                 <div class="time-work">
                     <p> с 10 до 20, ежедневно</p>
@@ -83,12 +92,9 @@
                         <a class="number-link" href="tel:+7812452525">8 812 450-25-25</a>
                     </p>
                 </div>
-            </div>
-            <ul class="breadcrumbs">
-                <li><a href="index.html">Главная</a></li>
-                <li><a href="catalog.html">Каталог</a></li>
-                <li><a>Сливочное</a></li>
-            </ul>
+
+
+            </nav>
         </div>
         <!--container-->
     </header>
@@ -96,8 +102,8 @@
     <main class="page-catalog container">
         <h1 class="page-title">Сливочное мороженое</h1>
         <section class="filters">
-            <form action="https://echo.htmlacademy.ru" method="POST">
-                <fieldset>
+            <form class="filters-form" action="https://echo.htmlacademy.ru" method="POST">
+                <fieldset class="filter-assortment">
                     <legend>Сортировка: </legend>
                     <select class="filters-option">
                         <option value="по популярности">по популярности </option>
@@ -106,12 +112,12 @@
                         <option value="по жирности">по жирности</option>
                     </select>
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-price">
                     <legend>Цена: 100 ₽ – 500 ₽ </legend>
                     <input class="input-range" type="range" min="100" max="500" step="1">
                 </fieldset>
                 <fieldset>
-                    <legend>Жирность: </legend>
+                    <legend class="filter-fatness">Жирность: </legend>
                     <label for="fat-content-zero">0%</label>
                     <input id="fat-content-zero" type="radio" name="Жирность" value="0%">
                     <label for="fat-content-ten"> до 10%</label>
@@ -121,7 +127,7 @@
                     <label for="fat-content-more-thirty">выше 30%</label>
                     <input id="fat-content-more-thirty" type="radio" name="Жирность" value="выше 30%">
                 </fieldset>
-                <fieldset>
+                <fieldset class="filter-fillers">
                     <legend>Наполнители:</legend>
                     <label for="chocolate"> шоколадные</label>
                     <input id="chocolate" type="checkbox" name="chocolate" value="шоколадные" checked>
@@ -134,7 +140,7 @@
                     <label for="jam"> джемы</label>
                     <input id="jam" type="checkbox" name="jam" value="джемы">
                 </fieldset>
-                <button type="submit">Применить</button>
+                <button class="filter-submit" type="submit">Применить</button>
             </form>
         </section>
 
@@ -277,46 +283,51 @@
     </main>
 
 
-    <footer class="footer container">
-        <section class="footer-social">
-            <h2>Как нас найти</h2>
-            <ul class="social-list">
-                <li class="social-item">
-                    <a class="social-button" href="#"><span>Фейсбук</span></a>
-                </li>
-                <li class="social-item">
-                    <a class="social-button" href="#"><span>Вконтакте</span></a>
-                </li>
-                <li class="social-item">
-                    <a class="social-button" href="#"><span>Инстаграм</span></a>
-                </li>
-                <li class="social-item">
-                    <a class="social-button" href="#"><span>Твитер</span></a>
-                </li>
-            </ul>
-        </section>
+    <footer class="footer">
+        <div class="container">
+            <section class="footer-social">
+                <h2>Как нас найти</h2>
+                <ul class="social-list">
+                    <li class="social-item">
+                        <a class="social-button" href="#"><span>Фейсбук</span></a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-button" href="#"><span>Вконтакте</span></a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-button" href="#"><span>Инстаграм</span></a>
+                    </li>
+                    <li class="social-item">
+                        <a class="social-button" href="#"><span>Твитер</span></a>
+                    </li>
+                </ul>
+            </section>
 
-        <section class="footer-info">
-            <h2>Дополнительная инфомрация о нас</h2>
-            <ul class="footer-info-list">
-                <li class="footer-info-item">
-                    <a href="#">Для поставщиков</a>
-                </li>
-                <li class="footer-info-item">
-                    <a href="#">О производстве</a>
-                </li>
-                <li class="footer-info-item">
-                    <a href="#">Наши документы</a>
-                </li>
-                <li class="footer-info-item">
-                    <a href="#">Экологические стандарты</a>
-                </li>
-            </ul>
-        </section>
-        <section class="footer-copyright">
-            <p><img class="footer-logo" src="images/logo-HTMLAcademy.svg" width="107.89" height="30.99"
-                    alt="HTML ACADEMY">
-            </p>
-            <p class="copyright-link">Сделано в <a href="https://htmlacademy.ru/"> HTML Academy</a>© 2021</p>
-        </section>
+            <section class="footer-info">
+                <h2>Дополнительная инфомрация о нас</h2>
+                <ul class="footer-info-list">
+                    <li class="footer-info-item">
+                        <a href="#">Для поставщиков</a>
+                    </li>
+                    <li class="footer-info-item">
+                        <a href="#">О производстве</a>
+                    </li>
+                    <li class="footer-info-item">
+                        <a href="#">Наши документы</a>
+                    </li>
+                    <li class="footer-info-item">
+                        <a href="#">Экологические стандарты</a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-copyright">
+                <p><img class="footer-logo" src="images/logo-HTMLAcademy.svg" width="107.89" height="30.99"
+                        alt="HTML ACADEMY">
+                </p>
+                <p class="copyright-link">Сделано в <a href="https://htmlacademy.ru/"> HTML Academy</a>© 2021</p>
+            </section>
+        </div>
     </footer>
+</body>
+
+</html>
