@@ -63,21 +63,18 @@
 /* -------main-navigation------*/
 
 
-.main-navigation {
+.main-navigation-wrapper {
     font-size: 16px;
     font-weight: 700;
     line-height: 18px;
     color: var(--basic-white);
-    outline: 1px solid #942718;
-    display: grid;
-    grid-template-columns: min-content 1fr 260px;
+    margin-top: 10px;
+}
+.main-navigation-inner {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2px;
 
-}
-.site-navigation-wrapper {
-    outline: 1px solid #1518a7;
-}
-.main-header-logo {
-    outline: 1px solid #0caf79;
 }
 .site-navigation,
 .breadcrumbs  {
@@ -85,8 +82,28 @@
     margin: 0;
     padding: 0;
 }
+.site-navigation {
+    flex-grow: 1;
+    display: flex;
+}
+.site-navigation li {
+    margin-left: 32px;
+}
+.site-navigation li:first-child {
+    margin-left: 24px;
+}
+.time-work-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.time-work p {
+    text-align: end;
+    margin-top: 0;
+    margin-bottom: 8px;
+}
 .site-navigation-link {
     border-bottom: 1px solid var(--basic-link);
+    
 }
 .site-navigation a {
     color: var(--basic-white);
@@ -116,7 +133,12 @@
 
 /*------------------------------------
 ---------------breadcrumbs------------*/
-
+.breadcrumbs {
+    order: 1;
+    flex-grow: 1;
+    display: flex;
+    
+}
 .breadcrumbs a {
     font-size: 14px;
     font-weight: 400;
@@ -135,19 +157,23 @@
 
 /*---------user-navigation--------*/
 
-.user-navigation {
-    outline: 3px solid #81ec07;
-}
-.time-work {
-    outline: 3px solid #000000;
-}
 .user-navigation a {
+    text-decoration: none;
+}
+.user-navigation-inner {
+    display: flex;
+}
+.user-navigation {
+    margin-left: 10px;
+}
+.user-navigation-inner a {
     color: var(--basic-white);
     
 }
-.time-work {
-    grid-column: 3/4;
+.basket p {
+    margin: 0;  
 }
+
 .time-work p {
     font-size: 14px;
     line-height: 16px;
@@ -185,13 +211,16 @@
 .special-offer-rasberries {
     border-radius: 16px;
     width: 560px;
+    height: 229px;
     background-image: url(../images/background/backgroud-raspberry.png);
     background-position: top left;
     background-repeat: no-repeat;
+ 
 }
 .special-offer-chocolate {
     border-radius: 16px;
     width: 560px;
+    height: 229px;
     background-image: url(../images/background/backgroud-chocolate.png);
     background-position: top left;
     background-repeat: no-repeat;
@@ -220,11 +249,17 @@
     border-bottom: 1px solid var(--basic-link);
 
 }
+.seller-item {
+    display: flex;
+    flex-wrap: wrap;
+}
 .seller-item a {
     color: var(--basic-white);
     font-size: 16px;
     line-height: 22px;
     text-decoration: none;
+    order: 1;
+    text-align: center;
 }
 .seller-item a:hover,
 .seller-item a:focus,
@@ -277,9 +312,8 @@
 
 /*news-wrapper*/
 .news-wrapper {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 39px;
+    display: flex;
+    justify-content: space-between;
     margin: 40px 0;
 }
 
@@ -294,6 +328,8 @@
     background-repeat: no-repeat;
     border-radius: 16px;
     color: var(--basic-black);
+    height: 220px;
+    width: 560px;
 }
 .article h2 {
     display: none;
@@ -318,7 +354,30 @@
     background-repeat: no-repeat;
     color: var(--basic-grey);
     border-radius: 16px;
+    height: 220px;
+    width: 560px;
 }
+.subscribe h2 {
+    display: none;
+}
+.subscribe-form {
+    display: flex;
+    margin: 26px;
+}
+.subscribe-item label {
+    display: none;
+}
+input[type=email] {
+    width: 368px;
+}
+.subscribe-item {
+    flex-grow: 1;
+}
+.subscribe-submit {
+    margin-left: 10px;
+    padding: 14px 19px 13px;
+}
+
 
 /*-----------------modal-------------------------
 -----------------------------------------------*/
@@ -333,8 +392,10 @@
 
 .footer .container {
     color: var(--basic-white);
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
 }
 
 .footer ul {
@@ -347,10 +408,11 @@
 .social-list {
     margin: 0;
     padding: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    display: flex;
 }
-
+.social-item {
+    margin-right: 12px;
+}
 .social-list a,
 .footer-info-list a,
 .copyright-link a {

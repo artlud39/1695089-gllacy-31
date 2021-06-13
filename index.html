@@ -14,33 +14,36 @@
 <body class="page-body">
   <header class="main-header">
     <div class="container">
-      <nav class="main-navigation">
-        <a class="main-header-logo"><img src="images/logo.svg" width="154" height="64" alt="CllacyShop"></a>
-        <ul class="site-navigation site-navigation-wrapper">
-          <li>
-            <a class="site-navigation-link" href="catalog.html"> Каталог</a>
-            <!--<ul class="site-navigation site-navigation-inner">
+      <nav class="main-navigation-wrapper">
+        <div class="main-navigation-inner">
+          <div class="main-header-logo">
+            <a><img src="images/logo.svg" width="154" height="64" alt="CllacyShop"></a>
+          </div>
+          <ul class="site-navigation site-navigation-wrapper">
+            <li>
+              <a class="site-navigation-link" href="catalog.html"> Каталог</a>
+              <!--<ul class="site-navigation site-navigation-inner">
               <li><a href="#">Новинки</a></li>
               <li><a href="#">Сливочное</a></li>
               <li><a href="#">Щербеты</a></li>
               <li><a href="#">Фруктовый лед</a></li>
               <li><a href="#">Мелорин</a></li>
             </ul>-->
-          </li>
-          <li>
-            <a class="site-navigation-link" href="blank.html">Доставка и оплата</a>
-          </li>
-          <li>
-            <a class="site-navigation-link" href="blank.html">О компании</a>
-          </li>
-        </ul>
+            </li>
+            <li>
+              <a class="site-navigation-link" href="blank.html">Доставка и оплата</a>
+            </li>
+            <li>
+              <a class="site-navigation-link" href="blank.html">О компании</a>
+            </li>
+          </ul>
 
 
-        <div class="user-navigation">
           <div class="user-navigation-wrapper">
-            <div class="search-wrapper">
-              <a class="search-link" href="#">Поиск</a>
-              <!--<form action="https://echo.htmlacademy.ru" method="POST">
+            <div class="user-navigation-inner">
+              <div class="search-wrapper user-navigation">
+                <a class="search-link" href="#">Поиск</a>
+                <!--<form action="https://echo.htmlacademy.ru" method="POST">
                 <p>
                   <label>
                     Поиск
@@ -49,11 +52,10 @@
                 </p>
                 <button class="visually-hidden" type="submit">Поиск</button>
               </form> -->
-            </div> <!-- search-wrapper-->
-
-            <div class="login-wrapper">
-              <a class=" login-link user-text" href="#">Вход</a>
-              <!--<form action="https://echo.htmlacademy.ru" method="POST">
+              </div> <!-- search-wrapper-->
+              <div class="login-wrapper user-navigation">
+                <a class=" login-link user-text" href="#">Вход</a>
+                <!--<form action="https://echo.htmlacademy.ru" method="POST">
                 <p>
                   <label for="login-login"> Логин </label>
                   <input type="email" name="email" id="login-login" placeholder="email@example.com">
@@ -68,25 +70,27 @@
                   <a href="#">Новая регистрация</a>
                 </p>
               </form> -->
-            </div>
-            <!--login-wrapper-->
-
-            <div class="basket">
-              <p>
-                <a href="#"> Пусто</a>
-              </p>
-            </div>
-            <!--basket-->
-
-            <div class="time-work">
-              <p> с 10 до 20, ежедневно</p>
-              <p>
-                <a class="number-link" href="tel:+7812452525">8 812 450-25-25</a>
-              </p>
+              </div>
+              <!--login-wrapper-->
+              <div class="basket user-navigation">
+                <p>
+                  <a href="#"> Пусто</a>
+                </p>
+              </div>
+              <!--basket-->
             </div>
           </div>
         </div>
+        <div class="time-work-wrapper">
+          <div class="time-work">
+            <p> с 10 до 20, ежедневно</p>
+            <p>
+              <a class="number-link" href="tel:+7812452525">8 812 450-25-25</a>
+            </p>
+          </div>
+        </div>
       </nav>
+
     </div>
     <!--container-->
   </header>
@@ -125,13 +129,13 @@
       <div class="special-offer special-offer-rasberries">
         <h3>Малинка Даром!</h3>
         <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a class="button special-offer-button" href="#">Хочу варенье!</a>
+          <a class="button special-offer-button" href="#">Хочу варенье!</a>
       </div>
       <div class="special-offer special-offer-chocolate">
         <h3>Шоколадки даром!</h3>
         <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
         </p>
-        <a class="button special-offer-button" href="#">Хочу шоколадки!</a>
+          <a class="button special-offer-button" href="#">Хочу шоколадки!</a>
       </div>
     </section>
 
@@ -211,7 +215,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="POST">
           <p class="subscribe-item">
             <label for="subscribe">Адрес почты</label>
-            <input type="email" name="subscribe" id="subscribe" placeholder="email@example.com">
+            <input class="subscribe-input" type="email" name="subscribe" id="subscribe" placeholder="email@example.com">
           </p>
           <button class="button subscribe-submit" type="submit">Отправить</button>
         </form>
