@@ -60,8 +60,52 @@
 .button:active {
     box-shadow: 0px 2px 2px var(--basic-shadow-active);
 }
-/* -------main-navigation------*/
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+
+
+/*------------------------------
+---------------slider-----------*/
+.slider {
+    margin-bottom: 27px;
+    text-align: center;
+}
+
+.slider-title {
+    width: 700px;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+}
+
+.slide {
+    padding-top: 321px;
+    display: none;
+  }
+  
+  .slide-current {
+    display: block;
+  }
+
+
+
+/* -------main-navigation------*/
+.site-navigation-inner {
+    display: none;
+}
 
 .main-navigation-wrapper {
     font-size: 16px;
@@ -196,22 +240,29 @@
     grid-template-columns: 1fr 1fr;
     gap: 26px;
 }
-.special-offer-wrapper h2 {
-    display: none;
-}
+
 .special-offer {
     font-size: 18px;
     font-weight: bold;
     line-height: 22px;
+    
 }
-.special-offer h3 {
+.special-offer-title {
     font-size: 35px;
     line-height: 41px;
+    margin: 16px;
+}
+.special-offer-info{
+    margin: 16px;
+    margin-bottom: 42px;    
+}
+.special-offer-button {
+    display: inline-block;
+    margin: 16px;
 }
 .special-offer-rasberries {
     border-radius: 16px;
     width: 560px;
-    height: 229px;
     background-image: url(../images/background/backgroud-raspberry.png);
     background-position: top left;
     background-repeat: no-repeat;
@@ -220,7 +271,6 @@
 .special-offer-chocolate {
     border-radius: 16px;
     width: 560px;
-    height: 229px;
     background-image: url(../images/background/backgroud-chocolate.png);
     background-position: top left;
     background-repeat: no-repeat;
@@ -231,9 +281,6 @@
 -------------------------------------*/
 .seller {
     margin: 40px 0;
-}
-.seller h2 {
-    display: none;
 }
 
 .seller-list {
@@ -292,11 +339,11 @@
     grid-template-rows: 1fr min-content;
     margin: 40px 0;
 }
-.features h3 {
+.features-title {
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
-    margin: 0;
+    margin: 24px 131px 21px 20px;
 }
 
 .features-list {
@@ -308,6 +355,14 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
   
+}
+.features-item {
+    margin-left: 20px;
+    margin-bottom: 33px;
+    margin-right: 23px;
+}
+.features-item-info {
+    margin: 0;
 }
 
 /*news-wrapper*/
@@ -328,11 +383,23 @@
     background-repeat: no-repeat;
     border-radius: 16px;
     color: var(--basic-black);
-    height: 220px;
     width: 560px;
 }
-.article h2 {
-    display: none;
+.article-title {
+    margin: 0;
+    margin-top: 23px;
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+.article-link{
+    margin: 0;
+    margin-left: 20px;
+    margin-bottom: 70px;
+    margin-right: 253px;
+}
+.article-title {
+    margin-top: 23px;
 }
 
 .article-link a {
@@ -357,12 +424,12 @@
     height: 220px;
     width: 560px;
 }
-.subscribe h2 {
-    display: none;
+.subscribe-info {
+    margin: 34px 22px 47px 26px;
 }
 .subscribe-form {
     display: flex;
-    margin: 26px;
+    margin: 26px 26px 40px 26px;
 }
 .subscribe-item label {
     display: none;
