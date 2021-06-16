@@ -22,13 +22,13 @@
                     <ul class="site-navigation site-navigation-wrapper">
                         <li>
                             <a class="site-navigation-link" href="catalog.html"> Каталог</a>
-                            <!--<ul class="site-navigation site-navigation-inner">
-                  <li><a href="#">Новинки</a></li>
-                  <li><a href="#">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
-                </ul>-->
+                            <ul class="site-navigation-inner">
+                                <li><a href="#">Новинки</a></li>
+                                <li><a href="#">Сливочное</a></li>
+                                <li><a href="#">Щербеты</a></li>
+                                <li><a href="#">Фруктовый лед</a></li>
+                                <li><a href="#">Мелорин</a></li>
+                            </ul>
                         </li>
                         <li>
                             <a class="site-navigation-link" href="blank.html">Доставка и оплата</a>
@@ -37,39 +37,38 @@
                             <a class="site-navigation-link" href="blank.html">О компании</a>
                         </li>
                     </ul>
-
-
                     <div class="user-navigation-wrapper">
                         <div class="user-navigation-inner">
                             <div class="search-wrapper user-navigation">
                                 <a class="search-link" href="#">Поиск</a>
-                                <!--<form action="https://echo.htmlacademy.ru" method="POST">
-                    <p>
-                      <label>
-                        Поиск
-                        <input type="text" name="search" placeholder=" Крем-брюле">
-                      </label>
-                    </p>
-                    <button class="visually-hidden" type="submit">Поиск</button>
-                  </form> -->
+                                <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="POST">
+                                    <p>
+                                        <label>
+                                            Поиск
+                                            <input type="text" name="search" placeholder=" Крем-брюле">
+                                        </label>
+                                    </p>
+                                    <button class="visually-hidden" type="submit">Поиск</button>
+                                </form>
                             </div> <!-- search-wrapper-->
                             <div class="login-wrapper user-navigation">
                                 <a class=" login-link user-text" href="#">Вход</a>
-                                <!--<form action="https://echo.htmlacademy.ru" method="POST">
-                    <p>
-                      <label for="login-login"> Логин </label>
-                      <input type="email" name="email" id="login-login" placeholder="email@example.com">
-                    </p>
-                    <p>
-                      <label for="login-password "> Пароль </label>
-                      <input type="password" name="password" id="login-password" placeholder="******">
-                    </p>
-                    <button type="submit">Войти</button>
-                    <p>
-                      <a href="#">Забыли пароль?</a>
-                      <a href="#">Новая регистрация</a>
-                    </p>
-                  </form> -->
+                                <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="POST">
+                                    <p>
+                                        <label for="login-login"> Логин </label>
+                                        <input type="email" name="email" id="login-login"
+                                            placeholder="email@example.com">
+                                    </p>
+                                    <p>
+                                        <label for="login-password "> Пароль </label>
+                                        <input type="password" name="password" id="login-password" placeholder="******">
+                                    </p>
+                                    <button type="submit">Войти</button>
+                                    <p>
+                                        <a href="#">Забыли пароль?</a>
+                                        <a href="#">Новая регистрация</a>
+                                    </p>
+                                </form>
                             </div>
                             <!--login-wrapper-->
                             <div class="basket user-navigation">
@@ -117,8 +116,8 @@
                     <legend>Цена: 100 ₽ – 500 ₽ </legend>
                     <input class="input-range" type="range" min="100" max="500" step="1">
                 </fieldset>
-                <fieldset>
-                    <legend class="filter-fatness">Жирность: </legend>
+                <fieldset class="filter-fatness">
+                    <legend>Жирность: </legend>
                     <label for="fat-content-zero">0%</label>
                     <input id="fat-content-zero" type="radio" name="Жирность" value="0%">
                     <label for="fat-content-ten"> до 10%</label>
@@ -141,12 +140,12 @@
                     <label for="jam"> джемы</label>
                     <input id="jam" type="checkbox" name="jam" value="джемы">
                 </fieldset>
-                <button class="filter-submit" type="submit">Применить</button>
+                <button class=" button filter-submit" type="submit">Применить</button>
             </form>
         </section>
 
         <section class="seller">
-            <h2>Список товара</h2>
+            <h2 class="visually-hidden">Список товара</h2>
             <ul class="seller-list">
                 <li class="seller-item">
                     <a href="#">
