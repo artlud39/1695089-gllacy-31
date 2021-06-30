@@ -90,7 +90,7 @@
 ---------------slider-----------*/
 .slider {
     position: relative;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
     text-align: center;
 }
 
@@ -190,8 +190,6 @@
     margin-top: 0;
     margin-bottom: 8px;
 }
-
-
 .site-navigation-link {
     display: block;
     border: 1px solid rgba(255, 255, 255, 0);
@@ -603,6 +601,7 @@
     font-size: 18px;
     font-weight: bold;
     line-height: 22px;
+    height: 100%;
     
 }
 .special-offer-title {
@@ -613,7 +612,8 @@
 }
 .special-offer-info{
     margin: 0;
-    padding: 16px;
+    padding-left: 16px;
+    padding-right: 30px;
     padding-bottom: 112px;    
 }
 .special-offer-button {
@@ -652,7 +652,7 @@
 /*----------------seller------------
 -------------------------------------*/
 .seller {
-    margin: 40px 0;
+    margin-top: 40px;
 }
 
 .seller-list {
@@ -689,7 +689,12 @@
 }
 .seller-img {
     position: relative;
-
+}
+.catalog-item-image {
+    width: 267px;
+    height: 267px;
+    margin: 0;
+    object-fit: contain;
 }
 .price {
     font-size: 45px;
@@ -764,14 +769,16 @@
     border-radius: 16px;
     display: grid;
     grid-template-rows: min-content min-content;
-    margin: 40px 0;
+    margin-top: 40px;
     height: 306px;
 }
 .features-title {
     font-size: 24px;
     line-height: 30px;
     font-weight: 500;
-    margin: 24px 131px 21px 20px;
+    margin: 0;
+    padding: 24px 131px 21px 20px;
+    
 }
 
 .features-list {
@@ -782,12 +789,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    row-gap: 11px;
     column-gap: 26px;
-    margin-left: 20px;
-    margin-right: 23px;
-    margin-bottom: 36px;
-  
+    padding-left: 20px;
+    padding-right: 23px;
 }
 .features-item {
     position: relative;
@@ -796,7 +800,7 @@
 .features-item-info::before {
     content: '';
     position: absolute;
-    top: 0;
+    top: -14px;
     left: 0;
     width: 49px;
     height: 49px;
@@ -824,7 +828,8 @@
 .news-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: 40px 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 
@@ -1024,9 +1029,72 @@
     transform: rotate(-45deg);
 }
 
+
+/*------------map----------
+---------------------------*/
+
+.modal-map {
+    position: relative;
+    width: 1200px;
+    height: 430px;
+    margin:auto;
+}
+
+.modal-map svg {
+    position: absolute;
+    top: 94px;
+    left: 316px;
+    width: 80px;
+    height: 140px;
+}
+
+.modal-feedback-map  {
+    position: absolute;
+    top: 62px;
+    right: 27px;
+    width: 303px;
+    height: 306px;
+    background-color: var(--basic-white);
+    border-radius: 16px;
+}
+.modal-feedback-map-inner {
+    padding: 31px 25px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+   
+
+}
+.modal-feedback-map p {
+    color: #323232;
+    font-size: 18px;
+    
+    font-weight: bold;
+    margin: 0;
+    margin-bottom: 26px;
+}
+.modal-feedback-map button {
+    letter-spacing: normal;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: bold;
+}
+.modal-feedback-map .modal-feedback-map-info {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+
+
+
+
+
 /*----------------footer----------
 ---------------------------------*/
-
+.footer {
+    margin-top: 14px;
+}
 .footer .container {
     color: var(--basic-white);
     display: flex;
@@ -1078,6 +1146,14 @@
  .footer-info {
      width: 327px;
      justify-self: center;
+     position: relative;
+ }
+ .footer-info svg {
+     position: absolute;
+     top: 13px;
+     left: -22px;
+     width: 15px;
+     height: 13px;
  }
  .footer-info h2 {
      display: none;
@@ -1087,7 +1163,10 @@
      margin: 0;
      display: grid;
      grid-template-columns: 1fr 1fr;
-     grid-template-rows: 1fr 1fr;
+     grid-template-rows: 1fr 1fr; 
+ }
+ .footer-info-list .footer-info-item:first-child a {
+     font-weight: bold;
  }
  .footer-info-list a:hover,
  .footer-info-list a:focus,
@@ -1199,6 +1278,9 @@
     background-color: #ABABAB;
     border-radius: 50%;
     cursor: pointer;
+  }
+  .range-controls .toggle:hover {
+    border: 9px solid #ffffff;
   }
 .range-controls .toggle-min {
     left: 18px;
