@@ -652,9 +652,8 @@ input:-moz-placeholder {
 .special-offer {
     font-size: 18px;
     font-weight: bold;
-    line-height: 22px;
-    height: 100%;
-    
+    line-height: 22px; 
+    height: 229px;
 }
 .special-offer-title {
     font-size: 35px;
@@ -666,7 +665,7 @@ input:-moz-placeholder {
     margin: 0;
     padding-left: 16px;
     padding-right: 30px;
-    padding-bottom: 112px;    
+     
 }
 .special-offer-rasberries {
     border-radius: 16px;
@@ -828,8 +827,7 @@ input:-moz-placeholder {
     line-height: 30px;
     font-weight: 500;
     margin: 0;
-    padding: 24px 131px 21px 20px;
-    
+    padding: 24px 131px 21px 20px; 
 }
 
 .features-list {
@@ -1125,7 +1123,7 @@ input:-moz-placeholder {
     margin: 0;
     margin-bottom: 26px;
 }
-.modal-feedback-map a {
+.modal-feedback-map .button {
     letter-spacing: normal;
     font-size: 18px;
     line-height: 24px;
@@ -1136,8 +1134,12 @@ input:-moz-placeholder {
     line-height: 20px;
     font-weight: 400;
 }
-
-
+.modal-feedback-map .number-link {
+    color: var(--basic-black);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+}
 
 
 
