@@ -687,6 +687,7 @@ input:-moz-placeholder {
 
 .special-offer-button {
     display: inline-block;
+    vertical-align: middle;
     margin: 0;
     padding: 13px 22px 12px;
     font-size: 18px;
